@@ -1,4 +1,4 @@
-const pregunta = "Preguntame algo";
+const pregunta = "Voy a ser el mejor profesor del mundo en 5 años?";
 
 const numeroRandom = Math.floor(Math.random() * 9) + 1;
 
@@ -7,7 +7,7 @@ let respuesta = "";
 if (numeroRandom === 1){
     respuesta = 'Si - definitivamente';
 } else if (numeroRandom === 2) {
-    respuesta = 'It is decidedly so';
+    respuesta = 'Puede que ser si';
 } else if (numeroRandom === 3) {
     respuesta = 'Sin ninguna duda';
 } else if (numeroRandom === 4) {
