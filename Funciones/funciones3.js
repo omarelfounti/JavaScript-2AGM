@@ -38,3 +38,21 @@ console.log("YouTube");
 console.log("Media:", media(vistasRecientesYouTube));
 console.log("Mediana:", mediana(vistasRecientesYouTube));
 console.log();
+
+// Palindromo
+function esPalindromo(palabra) {
+    let palabraInvertida = "";
+    
+    let palabraMinusculas = palabra.toLowerCase();
+    
+    for (let i = palabraMinusculas.length - 1; i >= 0; i--) {
+      palabraInvertida += palabraMinusculas[i];
+    }
+    
+    return palabraInvertida === palabraMinusculas;
+  }
+  
+  
+  console.log(esPalindromo("Reconocer")); 
+  console.log(esPalindromo("Casa")); 
+  
