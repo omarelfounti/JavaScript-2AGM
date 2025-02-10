@@ -43,3 +43,15 @@ function holaMundo() {
   
   holaMundo();
 
+// Ejemplo
+function cuentAtras() {
+    for (let i = 10; i > 0; i--) {
+      console.log(i);
+    }
+    
+    return "¡Despegue! 🚀";
+  }
+  
+  console.log(cuentAtras());
+
+

@@ -8,4 +8,20 @@ const telefono = {
     }
   }
 
-  telefono.tonoDeLlamada();  
+  telefono.tonoDeLlamada();
+  
+  //otro ejemplo
+
+  const telefono2 = {
+    modelo: "Android",
+    marca: "Samsung",
+    version: 16.1,
+    propietario: "Roberto",
+    tonoDeLlamada () {
+      console.log("¡Rin, rin! ¡Rin, rin! 📲")
+    }
+  }
+  console.log(telefono2.propietario);
+  telefono2.tonoDeLlamada();
+  
+  
