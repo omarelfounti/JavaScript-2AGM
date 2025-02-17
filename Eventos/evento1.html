@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Click</title>
+    <style>
+        #boton {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="boton">Haz clic aquí</button>
+
+    <script>
+        let boton = document.getElementById("boton");
+
+        boton.addEventListener("click", function() {
+            boton.style.backgroundColor = "red"; 
+            boton.innerText = "¡Color cambiado!";
+        });
+    </script>
+
+</body>
+</html>
