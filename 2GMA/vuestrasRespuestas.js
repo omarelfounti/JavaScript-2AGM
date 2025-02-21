@@ -49,3 +49,44 @@ vehiculo.cambiarVelocidad(80);
 // Mostramos la velocidad después de cambiarla
 vehiculo.mostrarVelocidad();
 
+const coche = {
+    marca: "Ford",
+    modelo: "Mustang 1968",
+    velocidadActual:0, 
+  };
+  
+  console.log(coche.velocidadActual);
+  
+  coche.velocidadActual += 50; 
+  console.log(coche.velocidadActual);
+  
+
+for (let i = 100; i >= 50; i-- ) {
+    if (i <= 50) {
+        console.log(i);
+        break;
+    } else {
+        console.log(i);
+    }
+}
+
+
+let precio = 20;
+let stock = 20;
+
+precio = 19.99;
+stock = 50
+
+console.log(precio);
+
+let producto = stock == 50 && precio == 19.99; 
+console.log(producto);
+
+for (let i = 100; i >= 50; i--) {
+    if (i % 5 === 0) {
+        if (i < 50) {
+            break
+        }
+    console.log(i);
+    } 
+}
