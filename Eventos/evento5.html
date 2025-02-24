@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Me Gusta</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .boton {
+            padding: 10px 15px;
+            font-size: 18px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .boton:hover {
+            background-color: #2980b9;
+        }
+        #contador-me-gusta {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contador de Me Gusta</h1>
+    <button id="boton-me-gusta" class="boton">👍 Me Gusta</button>
+    <p id="contador-me-gusta">0</p>
+
+    <script>
+        let botonMeGusta = document.getElementById("boton-me-gusta");
+        let contadorMeGusta = document.getElementById("contador-me-gusta");
+
+        let numeroDeMeGusta = 0;
+
+        botonMeGusta.addEventListener("click", function() {
+            numeroDeMeGusta++; 
+            contadorMeGusta.innerText = numeroDeMeGusta;
+        });
+    </script>
+
+</body>
+</html>

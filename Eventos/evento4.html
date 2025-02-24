@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+    <style>
+        .resaltado {
+            color: white;
+            background-color: blue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">¡Hola, bienvenido a la página!</h1>
+    
+    <div id="contenedor">
+        <p class="texto">Este es un párrafo dentro del contenedor.</p>
+        <img id="imagen" src="https://via.placeholder.com/150" alt="Imagen de prueba">
+    </div>
+
+    <button id="cambiar-texto">Cambiar Texto</button>
+    <button id="cambiar-imagen">Cambiar Imagen</button>
+    <button id="cambiar-estilo">Cambiar Estilo</button>
+    <button id="crear-elemento">Crear Nuevo Elemento</button>
+    <button id="eliminar-elemento">Eliminar Elemento</button>
+    <button id="reemplazar-elemento">Reemplazar Elemento</button>
+    <button id="mostrar-ocultar">Mostrar/Ocultar</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Seleccionar elementos
+            let titulo = document.getElementById("titulo");
+            let parrafo = document.querySelector(".texto");
+            let imagen = document.getElementById("imagen");
+            let contenedor = document.getElementById("contenedor");
+
+            // Modificar el texto
+            document.getElementById("cambiar-texto").addEventListener("click", function() {
+                titulo.innerText = "¡Texto cambiado con JavaScript!";
+                parrafo.innerHTML = "<strong>Este es un nuevo contenido dinámico.</strong>";
+            });
+
+            // Cambiar imagen
+            document.getElementById("cambiar-imagen").addEventListener("click", function() {
+                imagen.src = "https://via.placeholder.com/200";
+                imagen.alt = "Nueva imagen de prueba";
+            });
+
+            // Cambiar estilo
+            document.getElementById("cambiar-estilo").addEventListener("click", function() {
+                parrafo.classList.toggle("resaltado");
+            });
+
+            // Crear un nuevo elemento
+            document.getElementById("crear-elemento").addEventListener("click", function() {
+                let nuevoParrafo = document.createElement("p");
+                nuevoParrafo.innerText = "Este es un nuevo párrafo creado dinámicamente.";
+                contenedor.appendChild(nuevoParrafo);
+            });
+
+            // Eliminar un elemento
+            document.getElementById("eliminar-elemento").addEventListener("click", function() {
+                let parrafos = contenedor.getElementsByTagName("p");
+                if (parrafos.length > 1) {
+                    contenedor.removeChild(parrafos[parrafos.length - 1]);
+                } else {
+                    alert("No hay más elementos para eliminar.");
+                }
+            });
+
+            // Reemplazar un elemento
+            document.getElementById("reemplazar-elemento").addEventListener("click", function() {
+                let nuevoTitulo = document.createElement("h2");
+                nuevoTitulo.innerText = "¡Este es un nuevo título!";
+                document.body.replaceChild(nuevoTitulo, titulo);
+            });
+
+            // Mostrar u ocultar la imagen
+            document.getElementById("mostrar-ocultar").addEventListener("click", function() {
+                imagen.classList.toggle("oculto");
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+#contenedor {
+    border: 2px solid black; /* Borde negro */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 50%; /* Ancho del contenedor */
+    margin: 25vh auto; /* Centrar verticalmente y horizontalmente */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Alinear el texto al centro */
+    transition: background-color 0.5s ease-in-out; /* Transición suave de color */
+  }
+  
+  #frase-div {
+    border: 1px solid black; /* Borde negro */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 75%; /* Ancho del div de la frase */
+    margin: 10px auto; /* Centrar horizontalmente */
+    background-color: #fff; /* Fondo blanco */
+  }
+  

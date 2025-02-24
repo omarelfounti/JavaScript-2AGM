@@ -1,0 +1,24 @@
+body {
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.anillo-estado-animo {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border: 15px solid #ccc; /* Borde gris claro */
+    border-radius: 50%; /* Forma circular */
+    position: relative;
+}
+
+.piedra {
+    width: 125px;
+    height: 125px;
+    background-color: #3498db; /* Azul predeterminado */
+    border-radius: 50%; /* Forma circular */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar la piedra */
+    transition: background-color 0.5s ease-in-out; /* Transición suave de color */
+}
