@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+</head>
+<body>
+
+    <div id="estado-actualizacion" class="publicacion">
+        <p>¡Acabo de aterrizar de mi viaje en avión! ✈️</p>
+    </div>
+
+    <div id="publicado" class="publicacion">
+        <img id="imagen-vuelo" src="https://cdn.pixabay.com/photo/2017/05/12/13/17/night-flight-2307018_640.jpg" 
+             alt="avión despegando de la pista" width="300"/>
+        <p>¡Estoy a punto de despegar!</p>
+        <p>¡Qué emoción! 😬</p>
+    </div>
+
+    <script>
+        // Cambiar el texto dentro del primer párrafo del div con id="publicado"
+        document.getElementById("publicado").querySelector("p").innerText = 
+            "¡Cambio de planes de vuelo! ¡Hora de explorar nuevos lugares! ✈️🌍";
+
+        // Cambiar la imagen dentro del div con id="publicado"
+        document.getElementById("imagen-vuelo").src = "nuevo-destino.jpg";
+    </script>
+
+</body>
+</html>
+

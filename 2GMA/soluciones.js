@@ -98,6 +98,24 @@ mostrarVelocidad();
 cambiarVelocidad();
 mostrarVelocidad();
 
+/*
+
+const vehiculo = {
+    marca: "Nissan",
+    modelo: "240z",
+    VelocidadActual: "La velocidad actual es de: 0km/h",
+};
+console.log(vehiculo.VelocidadActual);
+vehiculo.mostrarVelocidad = function mostrarVelocidad () {
+    console.log(vehiculo.VelocidadActual);
+};
+vehiculo.cambiarVelocidad = function cambiarVelocidad () {
+    vehiculo.VelocidadActual = "La velocidad actual es de: 80km/h";
+};
+vehiculo.cambiarVelocidad();
+vehiculo.mostrarVelocidad(); */
+
+
 
 
 

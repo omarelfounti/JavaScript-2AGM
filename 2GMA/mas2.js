@@ -1,14 +1,5 @@
-const vehiculo = {
-    marca: "ford",
-    modelo: "mustang masch e",
-    velocidadActual: "0kmh",
-    mostarVelocidad: function(){
-        console.log(velocidadActual);
-        }   
+
+
+for (let i = 0; i < 11; i++) {
+    console.log(i);
 }
-
-vehiculo.mostarVelocidad();
-
-
-const cambiarVelocidad = vehiculo.velocidadActual ("80kmh");
-console.log(cambiarVelocidad);
